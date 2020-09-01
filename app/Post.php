@@ -8,13 +8,12 @@ class Post extends Model
 {
     public function tags()
     {
-        return $this->morphToMany(Tag::class,'taggable');
+        return $this->morphToMany(Tag::class,'taggable')->withTimestamps();
     }
-
 
     public function images()
     {
-        return $this->morphToMany(Tag::class,'taggable');
+        return $this->morphToMany(Image::class,'imageable')->withTimestamps();
     }
 
     public function collaborators()

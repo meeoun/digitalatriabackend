@@ -19,7 +19,7 @@ $factory->define(Image::class, function (Faker $faker) {
     $name = end($name);
     $extension = explode('.',$file);
     $extension = end($extension);
-    $url = "localhost/public/upload/news-posts/$name";
+    $url = "localhost/upload/news-posts/$name";
     return [
         "name"=>$name,
         "file_path"=>$file,

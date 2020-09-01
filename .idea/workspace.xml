@@ -13,8 +13,11 @@
     <list default="true" id="5835bf19-75f1-475e-a935-78b31727043e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ImageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_024412_add_taggables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_024412_add_taggables_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_041255_add_imageable_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_041255_add_imageable_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +182,7 @@
       <updated>1598825881524</updated>
       <workItem from="1598825882559" duration="5265000" />
       <workItem from="1598882910103" duration="33854000" />
-      <workItem from="1598964400091" duration="6122000" />
+      <workItem from="1598964400091" duration="14494000" />
     </task>
     <servers />
   </component>

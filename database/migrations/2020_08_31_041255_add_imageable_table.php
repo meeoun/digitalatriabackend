@@ -15,10 +15,11 @@ class AddImageableTable extends Migration
     {
         Schema::create('imageables', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('image_id');
             $table->unsignedBigInteger('imageable_id');
             $table->string('imageable_type');
+            $table->enum('position',['avatar','carousel', 'gallery', 'sidebar', 'front carousel one', 'front carousel two', 'banner']);
             $table->timestamps();
-            $table->unique(['imageable_id', 'imageable_type']);
         });
     }
 
