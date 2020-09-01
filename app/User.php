@@ -48,14 +48,63 @@ class User extends Authenticatable
         return $this->morphToMany(Tag::class,'taggable');
     }
 
+
     public function partners()
     {
         return $this->hasManyThrough(User::class, Partner::class,'user_id','id', 'id', 'partner_id' );
     }
 
+
+    public function partneredWith()
+    {
+        return $this->hasManyThrough(User::class, Partner::class,'partner_id','id', 'id', 'user_id' );
+    }
+
+
     public function posts()
     {
         return $this->hasMany(Post::class);
     }
+
+
+    public function partnerPosts(){
+        return $this->hasManyThrough(Post::class, Partner::class,'user_id','user_id', 'id', 'partner_id' );
+    }
+
+
+    public function partneredWithPosts()
+    {
+        return $this->hasManyThrough(Post::class, Partner::class,'partner_id','user_id', 'id', 'user_id' );
+    }
+
+
+    public function collaboratorPosts()
+    {
+        return $this->hasManyThrough(Post::class, Collaborator::class,'user_id','id', 'id', 'post_id' );
+    }
+
+    public function hasPostAccess(Post $post)
+    {
+        if($this->posts->contains($post))
+        {
+            return true;
+        }elseif ($this->partneredWithPosts->contains($post))
+        {
+            return true;
+        }elseif($this->partnerPosts->contains($post))
+        {
+            return true;
+        }
+        elseif ($this->collaboratorPosts->contains($post))
+        {
+            return true;
+        }else
+            {
+            return false;
+        }
+    }
+
+
+
 
 }

@@ -21,4 +21,15 @@ class Author extends User
         return $this->hasMany(Post::class, 'user_id');
     }
 
+    public function tags()
+    {
+        return $this->morphToMany(Tag::class,'taggable');
+    }
+
+
+    public function images()
+    {
+        return $this->morphToMany(Tag::class,'taggable');
+    }
+
 }

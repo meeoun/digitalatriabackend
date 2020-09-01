@@ -1,5 +1,7 @@
 <?php
 
+use App\Author;
+use App\Collaborator;
 use App\User;
 use App\Post;
 use App\Tag;
@@ -18,7 +20,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         $this->dropTables();
         $this->countImages();
@@ -26,8 +27,24 @@ class DatabaseSeeder extends Seeder
         factory(Post::class,500)->create();
         factory(Tag::class, 50)->create();
         factory(Image::class,$this->imageCount)->create();
+        factory(Collaborator::class, 100)->create();
+        $this->tagAuthors(15);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
+
+
+    
+
+    public function tagAuthors(int $count)
+    {
+        for($i=0; $i< $count; $i++)
+        {
+            $author = Author::whereDoesntHave('tags')->first();
+            $tags = Tag::inRandomOrder()->pluck('id')->take(rand(1,6))->toArray();
+            $author->tags()->sync($tags);
+        }
+    }
+
 
 
     public function countImages()
@@ -41,6 +58,8 @@ class DatabaseSeeder extends Seeder
         Post::truncate();
         Tag::truncate();
         Image::truncate();
+        Collaborator::truncate();
+        DB::table('taggables')->truncate();
 
     }
 }
