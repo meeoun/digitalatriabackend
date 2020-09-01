@@ -10,7 +10,123 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5835bf19-75f1-475e-a935-78b31727043e" name="Default Changelist" comment="" />
+    <list default="true" id="5835bf19-75f1-475e-a935-78b31727043e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Collaborator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Collaborator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ImageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_224844_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_224844_create_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/160x600.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/160x600_v2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/250x250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/300x250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/300x250_v1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/468x60-white.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/add_468_60.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/468x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/600x80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/728x90-white.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/728x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/addsense/addsense.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/banners/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/banners/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/banners/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/flickr/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/85_70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/flickr/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/flickr/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/flickr/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/flickr/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/flickr/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/770_200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/art1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/art2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/art3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/art4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/art5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/art6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/gal1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/gal2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/gal3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/gal4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/270_200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/400_430.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/h9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/im9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/list1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/100_80.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/list2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/list3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/list4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/list5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/list6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/listw1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/80_70.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/listw2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/listw3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/listw4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/listw5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/270_310.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/185_160.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single-art9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/770_380.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/single2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/st1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/st2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/st3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/st4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/st5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/thumb1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/thumb2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/thumb3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/thumb4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/news-posts/thumb5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/upload/news-posts/100_100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload/users/avatar7.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,12 +260,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/upload/news-posts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
       <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public" />
     </key>
   </component>
@@ -168,7 +288,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598825881524</updated>
       <workItem from="1598825882559" duration="5265000" />
-      <workItem from="1598882910103" duration="16255000" />
+      <workItem from="1598882910103" duration="33854000" />
     </task>
     <servers />
   </component>
@@ -188,6 +308,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598924573962">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1598924573962" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1598887932850">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

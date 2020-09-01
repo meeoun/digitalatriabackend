@@ -47,4 +47,15 @@ class User extends Authenticatable
     {
         return $this->morphToMany(Tag::class,'taggable');
     }
+
+    public function partners()
+    {
+        return $this->hasManyThrough(User::class, Partner::class,'user_id','id', 'id', 'partner_id' );
+    }
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+
 }

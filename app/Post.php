@@ -16,4 +16,14 @@ class Post extends Model
     {
         return $this->morphToMany(Tag::class,'taggable');
     }
+
+    public function collaborators()
+    {
+     return $this->hasMany(Collaborator::class);
+    }
+
+    public function owner()
+    {
+        return $this->hasOne(User::class);
+    }
 }
