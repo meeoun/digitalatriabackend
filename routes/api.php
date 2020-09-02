@@ -13,7 +13,16 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+/*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+*/
+/*
+Route::namespace('api')->group(function (){
+    Route::apiResource('posts', 'Posts\PostController');
+});
+*/
+Route::apiResource('posts', 'api\posts\PostController');
+
+Route::apiResource('posts.images', 'api\posts\PostImageController');

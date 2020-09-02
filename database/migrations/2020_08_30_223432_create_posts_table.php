@@ -28,7 +28,7 @@ class CreatePostsTable extends Migration
             $table->boolean('published')->default(0);
             $table->enum('type',['review','tutorial','news'])->nullable();
             $table->timestamp('published_at')->nullable();
-            $table->timestamp('deleted_at')->nullable();
+            $table->softDeletes();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
 

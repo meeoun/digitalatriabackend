@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder
 {
     public $imageCount;
     public $users = 30;
-    public $posts = 500;
-    public $tags = 50;
+    public $posts = 30;
+    public $tags = 5;
 
     /**
      * Seed the application's database.
@@ -27,9 +27,9 @@ class DatabaseSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=0;');
         $this->dropTables();
         $this->countImages();
-        factory(User::class,30)->create();
-        factory(Post::class,500)->create();
-        factory(Tag::class, 50)->create();
+        factory(User::class,$this->users)->create();
+        factory(Post::class,$this->posts)->create();
+        factory(Tag::class, $this->tags)->create();
         factory(Image::class,$this->imageCount)->create();
         factory(Collaborator::class, (int)($this->users/2))->create();
         factory(Partner::class, (int)($this->users/3))->create();
