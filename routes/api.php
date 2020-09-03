@@ -24,5 +24,6 @@ Route::namespace('api')->group(function (){
 });
 */
 Route::apiResource('posts', 'api\posts\PostController');
-
 Route::apiResource('posts.images', 'api\posts\PostImageController');
+Route::apiResource('posts.author', 'api\posts\PostAuthorController');
+
