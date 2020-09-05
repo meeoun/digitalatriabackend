@@ -23,6 +23,7 @@ $factory->define(Image::class, function (Faker $faker) {
     return [
         "name"=>$name,
         "file_path"=>$file,
+        "hash_name"=>$faker->unique()->creditCardNumber,
         "url"=>$url,
         "extension"=>$extension
     ];

@@ -26,4 +26,6 @@ Route::namespace('api')->group(function (){
 Route::apiResource('posts', 'api\posts\PostController');
 Route::apiResource('posts.images', 'api\posts\PostImageController');
 Route::apiResource('posts.author', 'api\posts\PostAuthorController');
+Route::apiResource('posts.access', 'api\posts\PostAccessController');
 
+Route::apiResource('images', 'api\images\ImageController');

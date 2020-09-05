@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
+    protected  $hidden =[
+        'pivot',
+        'laravel_through_key'
+    ];
     //
 
     public function posts()

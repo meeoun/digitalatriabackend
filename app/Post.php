@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
+
+    protected  $hidden =[
+        'pivot',
+        'laravel_through_key'
+    ];
+
+
     public function tags()
     {
         return $this->morphToMany(Tag::class,'taggable')->withTimestamps();

@@ -12,6 +12,24 @@
   <component name="ChangeListManager">
     <list default="true" id="5835bf19-75f1-475e-a935-78b31727043e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Author.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Collaborator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Collaborator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Posts/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Posts/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Partner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Partner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Traits/ApiResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/ApiResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ImageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_223432_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_223432_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_224844_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_224844_create_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_224948_create_collaborators_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_224948_create_collaborators_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_024412_add_taggables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_024412_add_taggables_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_041255_add_imageable_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_041255_add_imageable_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_154639_create_partners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_154639_create_partners_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,13 +169,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
-      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\app\Http\Controllers\Api\Posts" />
       <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
+      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -178,6 +196,8 @@
       <workItem from="1598882910103" duration="33854000" />
       <workItem from="1598964400091" duration="21189000" />
       <workItem from="1599053905983" duration="16257000" />
+      <workItem from="1599144817556" duration="8788000" />
+      <workItem from="1599232798014" duration="24679000" />
     </task>
     <servers />
   </component>
@@ -197,10 +217,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2458" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599076127665">
-      <screen x="1920" y="0" width="1680" height="1010" />
+    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599232859950">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1599057519139" />
+    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1599232859950" />
     <state x="2458" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1599076127665" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599013863578">
       <screen x="0" y="0" width="1920" height="1040" />

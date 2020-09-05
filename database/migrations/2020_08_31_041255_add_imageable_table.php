@@ -19,6 +19,7 @@ class AddImageableTable extends Migration
             $table->unsignedBigInteger('imageable_id');
             $table->string('imageable_type');
             $table->enum('position',['avatar','carousel', 'gallery', 'sidebar', 'front carousel one', 'front carousel two', 'banner']);
+            $table->foreign('image_id')->references('id')->on('images')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

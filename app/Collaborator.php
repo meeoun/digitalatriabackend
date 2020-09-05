@@ -7,6 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Collaborator extends Model
 {
 
+    protected  $hidden =[
+        'pivot',
+        'laravel_through_key'
+    ];
 
         public function user()
         {

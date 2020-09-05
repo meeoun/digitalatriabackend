@@ -14,6 +14,7 @@ class PostController extends ApiController
      */
     public function index()
     {
+
         return $this->showAll(Post::all());
     }
 

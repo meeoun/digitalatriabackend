@@ -18,8 +18,8 @@ class CreatePartnersTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('partner_id');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('partner_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();;
+            $table->foreign('partner_id')->references('id')->on('users')->cascadeOnDelete()->cascadeOnUpdate();;
             $table->unique(['user_id','partner_id']);
         });
     }
