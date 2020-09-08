@@ -1,35 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5835bf19-75f1-475e-a935-78b31727043e" name="Default Changelist" comment="">
+    <list default="true" id="f45b2ea8-c79b-4df9-a416-7834e7632e1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Author.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Author.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Collaborator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Collaborator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Posts/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Posts/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Partner.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Partner.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Traits/ApiResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/ApiResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ImageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_223432_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_223432_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_224844_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_224844_create_images_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_30_224948_create_collaborators_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_30_224948_create_collaborators_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_024412_add_taggables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_024412_add_taggables_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_041255_add_imageable_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_041255_add_imageable_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_31_154639_create_partners_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_31_154639_create_partners_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +22,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="composer.json" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -155,28 +131,16 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1gpyZEWOnpkRMa7iFB4dyRqG4q7" />
+  <component name="ProjectId" id="1hC5tqj0czD77OlnSaXzPDBQJLL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/upload/news-posts" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\app\Http\Controllers\Api\Posts" />
-      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public\upload\news-posts" />
-      <recent name="F:\Vagrant Boxes\LaravelTwo\laravel\public" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -187,44 +151,24 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5835bf19-75f1-475e-a935-78b31727043e" name="Default Changelist" comment="" />
-      <created>1598825881524</created>
+      <changelist id="f45b2ea8-c79b-4df9-a416-7834e7632e1c" name="Default Changelist" comment="" />
+      <created>1599502450381</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598825881524</updated>
-      <workItem from="1598825882559" duration="5265000" />
-      <workItem from="1598882910103" duration="33854000" />
-      <workItem from="1598964400091" duration="21189000" />
-      <workItem from="1599053905983" duration="16257000" />
-      <workItem from="1599144817556" duration="8788000" />
-      <workItem from="1599232798014" duration="24679000" />
+      <updated>1599502450381</updated>
+      <workItem from="1599502451414" duration="68000" />
+      <workItem from="1599502556647" duration="1638000" />
+      <workItem from="1599507641132" duration="7433000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599232859950">
+    <state x="714" y="343" key="#Notifications" timestamp="1599502516121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="303" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1599232859950" />
-    <state x="2458" y="294" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1680.1010@1920.0.1680.1010" timestamp="1599076127665" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599013863578">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1599013863578" />
+    <state x="714" y="343" key="#Notifications/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1599502516121" />
   </component>
 </project>

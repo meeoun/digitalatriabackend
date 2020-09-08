@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
 {
     public $imageCount;
     public $users = 30;
-    public $posts = 30;
+    public $posts = 100;
     public $tags = 5;
 
     /**
@@ -53,16 +53,16 @@ class DatabaseSeeder extends Seeder
         {
             for($i=0; $i< rand(1,5); $i++)
             {
-                $post->images()->save($carousel,['position'=>'carousel']);
+                $post->images()->save($carousel,['position'=>'carousel', 'caption'=>'This is a caption!']);
             }
 
             for($i=0; $i< rand(1,9); $i++)
             {
-                $post->images()->save($gallery,['position'=>'gallery']);
+                $post->images()->save($gallery,['position'=>'gallery', 'caption'=>'This is a caption!']);
             }
             $post->images()->save($side,['position'=>'sidebar']);
-            $post->images()->save($front_one,['position'=>'front carousel one']);
-            $post->images()->save($front_two,['position'=>'front carousel two']);
+            $post->images()->save($front_one,['position'=>'front carousel one', 'caption'=>'This is a caption!']);
+            $post->images()->save($front_two,['position'=>'front carousel two', 'caption'=>'This is a caption!']);
             $post->images()->save($banner,['position'=>'banner']);
         }
     }

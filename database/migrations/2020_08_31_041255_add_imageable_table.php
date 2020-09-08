@@ -18,6 +18,7 @@ class AddImageableTable extends Migration
             $table->unsignedBigInteger('image_id');
             $table->unsignedBigInteger('imageable_id');
             $table->string('imageable_type');
+            $table->text('caption')->nullable();
             $table->enum('position',['avatar','carousel', 'gallery', 'sidebar', 'front carousel one', 'front carousel two', 'banner']);
             $table->foreign('image_id')->references('id')->on('images')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();

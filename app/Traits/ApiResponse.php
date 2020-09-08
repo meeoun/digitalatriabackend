@@ -2,6 +2,7 @@
 namespace App\Traits;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 
 trait ApiResponse
@@ -9,22 +10,75 @@ trait ApiResponse
     private $field ="";
     private $operator = "";
     private $value ="";
+    private $paginate = 25;
+    private $pivotDetected = false;
 
 
-    private function controlFilter($string, $operator)
+
+    private function specialValues($string)
     {
-        $this->operator = $operator;
-
-        if($operator == "=")
+        if($string == "null")
         {
-            $values = explode("_eq_",$string);
-        }else{
-            $values = explode("_ne_",$string);
+            return null;
         }
-        $this->field = $values[0];
-        $this->value = end($values);
+
+        return $string;
     }
 
+
+
+    private function checkIfSort($query)
+    {
+        $values =explode("_eq_",$query);
+        if($values[0] == "sort_by")
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
+    }
+
+
+    private function controlFilter($query, $operator, $value)
+    {
+        $this->operator = $operator;
+        $this->value = $value;
+        if($operator == "=")
+        {
+           $this->field = $query;
+        }elseif ($operator == "!="){
+            $this->field = substr($query,0,-1);
+        }
+
+    }
+
+    private function pivotQuery($query)
+    {
+        $this->pivotDetected = true;
+        $values = explode("pivot_", $query);
+        return end($values);
+    }
+
+    private function filterPivot($collection)
+    {
+        $collection = $collection->filter(function($value, $key){
+            foreach ($value->pivot->getAttributes() as $key2=>$value2)
+            {
+                if($key2 == $this->field)
+                {
+                    if($this->operator == "=")
+                    {
+                        return ($this->value == $value2);
+                    }else{
+                        return ($this->value != $value2);
+                    }
+                }
+            }
+            return false;
+        });
+        return $collection;
+    }
 
     private function success($data, $code)
     {
@@ -38,8 +92,9 @@ trait ApiResponse
 
     protected function showAll(Collection $collection, $code=200 )
     {
-        $collection = $this->sortData($collection);
         $collection = $this->filterData($collection);
+        $collection = $this->sortData($collection);
+        $collection = $this->paginateData($collection);
         return $this->success(['data'=> $collection], $code);
     }
 
@@ -56,26 +111,58 @@ trait ApiResponse
 
     protected function filterData(Collection $collection)
     {
+        $limit = null;
         foreach (request()->query() as $query => $value)
         {
-            if(strpos($query, '_eq_') !== false)
+            if($query == "page")
             {
-                $this->controlFilter($query, "=");
-
-            }elseif (strpos($query, '_ne_') !== false)
-            {
-                $this->controlFilter($query, "!=");
+                continue;
             }
-            $collection = $collection->where($this->field,$this->operator,$this->value);
+            if(strpos($query, 'pivot') !== false)
+            {
+             $query = $this->pivotQuery($query);
+            }
+
+            if ($query== 'limit')
+            {
+                $limit = $value;
+            }elseif(substr($query,-1) != "!")
+            {
+                if(!$this->checkIfSort($query))
+                {
+                    $this->controlFilter($query, "=",$value);
+                }
+
+            }elseif (substr($query,-1) == "!")
+            {
+                $this->controlFilter($query, "!=", $value);
+            }
+            if($this->pivotDetected)
+            {
+                $collection = $this->filterPivot($collection);
+            }else{
+                $collection = $collection->where($this->field,$this->operator,$this->value);
+            }
+            if($limit)
+            {
+                $collection = $collection->take($limit);
+            }
+            $this->pivotDetected = false;
         }
         return $collection;
     }
 
     protected function sortData(Collection $collection)
     {
-        if(request()->has('sort_by'))
-        {
-            $attribute = request()->sort_by;
+        $attribute = null;
+        foreach (request()->query() as $query => $value) {
+            $values = explode("_eq_",$query);
+            if($values[0] == "sort_by")
+            {
+                $attribute = $values[1];
+                break;
+            }
+        }
             if(request()->has('desc'))
             {
                 $collection = $collection->sortByDesc->{$attribute};
@@ -83,10 +170,21 @@ trait ApiResponse
             }else{
                 $collection = $collection->sortBy->{$attribute};
             }
-        }
+
         return $collection;
     }
 
+    protected function paginateData(Collection $collection)
+    {
+
+        $page = LengthAwarePaginator::resolveCurrentPage();
+        $results = $collection->slice(($page-1)*$this->paginate, $this->paginate)->values();
+        $paginated = new LengthAwarePaginator($results, $collection->count(), $this->paginate, $page,[
+            'path'=> LengthAwarePaginator::resolveCurrentPath(),
+        ]);
+        $paginated->appends(request()->all());
+        return $paginated;
+    }
 
 
 }

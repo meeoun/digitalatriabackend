@@ -13,6 +13,7 @@ $factory->define(Post::class, function (Faker $faker) {
     $scores =null;
     $max = null;
     $deleted = null;
+    $published = null;
     if($type === "review")
     {
         $scores = ReviewScore::scores(5);
@@ -21,6 +22,11 @@ $factory->define(Post::class, function (Faker $faker) {
     if(rand(1,100) > 75)
     {
         $deleted = now();
+    }
+
+    if(rand(1,100) > 75)
+    {
+        $published = now();
     }
 
 
@@ -32,12 +38,13 @@ $factory->define(Post::class, function (Faker $faker) {
         'summary' => $faker->sentences(8,true),
         'content' => $faker->sentences(40,true),
         'user_id' => User::inRandomOrder()->first()->id,
+        'gallery_caption'=>"This is the main gallery caption!",
         'review_scores' => $scores,
         'max_review_score' => $max,
         'views' => rand(1,1000),
         'review_call_out' => $faker->sentences(2,true),
         'type' => $type,
-        'published_at' => now(),
+        'published_at' => $published,
         'deleted_at' => $deleted,
     ];
 });

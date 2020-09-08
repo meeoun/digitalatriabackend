@@ -11,7 +11,13 @@ class Post extends Model
         'pivot',
         'laravel_through_key'
     ];
+    protected $appends = ['publish_time'];
 
+    public function getpublishTimeAttribute()
+    {
+        $date = \Carbon\Carbon::parse($this->published_at);
+        return  $date->format('h:i A');;
+    }
 
     public function tags()
     {
@@ -20,7 +26,7 @@ class Post extends Model
 
     public function images()
     {
-        return $this->morphToMany(Image::class,'imageable')->withTimestamps();
+        return $this->morphToMany(Image::class,'imageable')->withTimestamps()->withPivot(['id','caption', 'position']);
     }
 
 
