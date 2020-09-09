@@ -3,20 +3,38 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-
+    use SoftDeletes;
     protected  $hidden =[
         'pivot',
-        'laravel_through_key'
+        'laravel_through_key',
+        'owner'
     ];
-    protected $appends = ['publish_time'];
+    protected $appends = ['publish_time', 'publish_date', 'author', 'front_page_carousel'];
 
     public function getpublishTimeAttribute()
     {
         $date = \Carbon\Carbon::parse($this->published_at);
-        return  $date->format('h:i A');;
+        return  $date->format('h:i A');
+    }
+
+    public function getpublishDateAttribute()
+    {
+        $date = \Carbon\Carbon::parse($this->published_at);
+        return  $date->format('d M Y');
+    }
+
+    public function getauthorAttribute()
+    {
+        return $this->owner;
+    }
+
+    public function getfrontPageCarouselAttribute()
+    {
+        return $this->images()->wherePivot('position','=','front carousel one')->first();
     }
 
     public function tags()
@@ -32,7 +50,7 @@ class Post extends Model
 
     public function owner()
     {
-        return $this->belongsTo(User::class,'user_id','id');
+        return $this->belongsTo(Author::class,'user_id','id');
     }
 
 

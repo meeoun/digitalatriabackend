@@ -26,7 +26,7 @@ class CreatePostsTable extends Migration
             $table->integer('max_review_score')->nullable();
             $table->unsignedInteger('views')->default(0);
             $table->text('review_call_out')->nullable();
-            $table->enum('type',['review','tutorial','news'])->nullable();
+            $table->enum('type',['reviews','tutorials','news'])->nullable();
             $table->timestamp('published_at')->nullable();
             $table->softDeletes();
             $table->timestamps();

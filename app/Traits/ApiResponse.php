@@ -21,22 +21,17 @@ trait ApiResponse
         {
             return null;
         }
-
         return $string;
     }
 
-
-
-    private function checkIfSort($query)
+    private function applyLimit($collection)
     {
-        $values =explode("_eq_",$query);
-        if($values[0] == "sort_by")
+        if(request()->has('limit'))
         {
-            return true;
-        }else
-        {
-            return false;
+            return  $collection->take(request()->get('limit'));
         }
+
+        return $collection;
     }
 
 
@@ -50,7 +45,7 @@ trait ApiResponse
         }elseif ($operator == "!="){
             $this->field = substr($query,0,-1);
         }
-
+        $this->value = $this->specialValues($this->value);
     }
 
     private function pivotQuery($query)
@@ -94,6 +89,7 @@ trait ApiResponse
     {
         $collection = $this->filterData($collection);
         $collection = $this->sortData($collection);
+        $collection = $this->applyLimit($collection);
         $collection = $this->paginateData($collection);
         return $this->success(['data'=> $collection], $code);
     }
@@ -111,10 +107,10 @@ trait ApiResponse
 
     protected function filterData(Collection $collection)
     {
-        $limit = null;
+
         foreach (request()->query() as $query => $value)
         {
-            if($query == "page")
+            if($query == "page" || $query =="sort_by" || $query =='limit')
             {
                 continue;
             }
@@ -123,18 +119,13 @@ trait ApiResponse
              $query = $this->pivotQuery($query);
             }
 
-            if ($query== 'limit')
+            if(substr($query,-1) != "!")
             {
-                $limit = $value;
-            }elseif(substr($query,-1) != "!")
-            {
-                if(!$this->checkIfSort($query))
-                {
-                    $this->controlFilter($query, "=",$value);
-                }
+                $this->controlFilter($query, "=",$value);
 
             }elseif (substr($query,-1) == "!")
             {
+
                 $this->controlFilter($query, "!=", $value);
             }
             if($this->pivotDetected)
@@ -142,10 +133,6 @@ trait ApiResponse
                 $collection = $this->filterPivot($collection);
             }else{
                 $collection = $collection->where($this->field,$this->operator,$this->value);
-            }
-            if($limit)
-            {
-                $collection = $collection->take($limit);
             }
             $this->pivotDetected = false;
         }
@@ -155,22 +142,15 @@ trait ApiResponse
     protected function sortData(Collection $collection)
     {
         $attribute = null;
-        foreach (request()->query() as $query => $value) {
-            $values = explode("_eq_",$query);
-            if($values[0] == "sort_by")
-            {
-                $attribute = $values[1];
-                break;
-            }
+        if(request()->has("sort_by"))
+        {
+            $attribute = request()->get("sort_by");
+            $collection = $collection->sortBy->{$attribute};
+        }elseif (request()->has("sort_by!"))
+        {
+            $attribute = request()->get("sort_by!");
+            $collection = $collection->sortByDesc->{$attribute};
         }
-            if(request()->has('desc'))
-            {
-                $collection = $collection->sortByDesc->{$attribute};
-
-            }else{
-                $collection = $collection->sortBy->{$attribute};
-            }
-
         return $collection;
     }
 

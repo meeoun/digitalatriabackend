@@ -8,13 +8,13 @@ use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
 $factory->define(Post::class, function (Faker $faker) {
-    $type = array("review","tutorial", "news");
+    $type = array("reviews","tutorials", "news");
     $type = $type[array_rand($type)];
     $scores =null;
     $max = null;
     $deleted = null;
     $published = null;
-    if($type === "review")
+    if($type === "reviews")
     {
         $scores = ReviewScore::scores(5);
         $max = 10;
